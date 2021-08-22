@@ -17,10 +17,6 @@ Third, The IAC creates cloudwatch mertic filter and creates alarms to notify the
 - Management Console sign-in without MFA
 - Usage of the "root" account
 
-## Note: 
-
-To notify the customer using the alarms it uses an already created sns topic which is passed on the to variable `dd_alarm_actions` and `dd_ok_actions` for notifucation.
-
 ### Input Variables
 The folloing variuables are used within the IAC.
 
@@ -48,6 +44,8 @@ The folloing variuables are used within the IAC.
 
 # NOTE: 
 Please have your aws profile configured locally on the host. IAC make use of the profile creds for resources creation.
+
+To notify the customer using the alarms it uses an already created sns topic which is passed on the to variable `dd_alarm_actions` and `dd_ok_actions` for notifucation.
 
 As the IAc is using lots of varibles, it is more convenient to to specify their values in a variable definitions file and then specify that file on the command line. In this case
 I have used the file name as `dev.tfvars`.
