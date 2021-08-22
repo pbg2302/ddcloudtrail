@@ -19,7 +19,7 @@ The IaC creates cloudwatch mertic filter and creates alarms to notify the custom
 - Usage of the "root" account
  
 ### Input Variables
-The folloing variuables are used within the IaC.
+The following variables are used within the IaC.
 
 - `region` - Name of the region where the trail should be created (default: eu-west-2)
 - `s3_bucket_name` - Name of the S3 bucket to store logs in (required)
@@ -70,7 +70,7 @@ Command for running terraform with tfvars file
 
 ### Removing Default VPCs Requirements
 
-Each new AWS account contains new default network resources within each region. As the default subnets provide access to the internet, there is a risk that workloads could be deployed directly onto these subnets and bypass the network controls in place within the platform that prevent uncontrolled access to the internet. To mitigate this risk, the default VPC and all of the associated default network resources in every region must be deleted from the account. 
+Each new AWS account contains new default network resources within each region. As the default subnets provide access to the internet, there is a risk that workloads could be deployed directly onto these subnets and bypass the network controls in place within the platform that prevent uncontrolled access to the internet. To mitigate this risk, the default VPC and all of the associated default network resources in every region must be deleted from the account.
 The `deletedefaultvpc.py` script will handle the above requirements in the following oder:
 
   1.) Deleting the internet gateway \
