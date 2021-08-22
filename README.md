@@ -34,17 +34,17 @@ The folloing variuables are used within the IAC.
 - `kms_key_id` - Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
 - `cloud_watch_logs_role_arn` - Specifies the role for the CloudWatch Logs endpoint to assume to write to a user’s log group.
 - `cloud_watch_logs_group_arn` - Specifies a log group name using an Amazon Resource Name (ARN), that represents the log group to which CloudTrail logs will be delivered.
-`cloudtrail_name` - Name of the cloudtrail
-`log_group_name`  - Name of the cloudwatch log group name to integrate cloudtrail trails.
-`cloudwatch_role_name` - Name for the CloudTrail IAM role
-`policy_name` - Name of policy 
-`dd_alarm_name` - The descriptive name for the alarm. This name must be unique within the user's AWS account
-`dd_metric_name` - The name for the alarm's associated metric. See docs for supported metrics.
-`dd_namespace` - The destination namespace of the CloudWatch metric.
-`dd_alarm_description` - The description for the alarm.
-`dd_alarm_actions` - The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-`dd_ok_actions` - The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name.
-`user_name` - Username for the KMS Key Administrators.
+- `cloudtrail_name` - Name of the cloudtrail
+- `log_group_name`  - Name of the cloudwatch log group name to integrate cloudtrail trails.
+- `cloudwatch_role_name` - Name for the CloudTrail IAM role
+- `policy_name` - Name of policy 
+- `dd_alarm_name` - The descriptive name for the alarm. This name must be unique within the user's AWS account
+- `dd_metric_name` - The name for the alarm's associated metric. See docs for supported metrics.
+- `dd_namespace` - The destination namespace of the CloudWatch metric.
+- `dd_alarm_description` - The description for the alarm.
+- `dd_alarm_actions` - The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+- `dd_ok_actions` - The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name.
+- `user_name` - Username for the KMS Key Administrators.
 
 As the IAc is using lots of varibles, it is more convenient to to specify their values in a variable definitions file and then specift that file on the command line.
 
