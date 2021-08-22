@@ -73,11 +73,11 @@ Command for running terraform with tfvars file
 Each new AWS account contains new default network resources within each region. As the default subnets provide access to the internet, there is a risk that workloads could be deployed directly onto these subnets and bypass the network controls in place within the platform that prevent uncontrolled access to the internet. To mitigate this risk, the default VPC and all of the associated default network resources in every region must be deleted from the account. 
 The `deletedefaultvpc.py` script will handle the above requirements in the following oder:
 
-  1.) Deleting the internet gateway
-  2.) Deleting subnets
-  3.) Deleting route tables
-  4.) Deleting network access lists
-  5.) Deleting security groups
+  1.) Deleting the internet gateway \
+  2.) Deleting subnets \
+  3.) Deleting route tables \
+  4.) Deleting network access lists \
+  5.) Deleting security groups \
   6.) Deleting the VPC 
 
 ## Requirements:
