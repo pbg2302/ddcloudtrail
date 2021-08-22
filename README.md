@@ -61,6 +61,7 @@ Command for running terraform with tfvars file
 
 ## Usage
 - setup your aws profile
+- assign values to the dev.tfvars file
 - terraform init
 - terraform apply -var-file="dev.tfvars"
 
