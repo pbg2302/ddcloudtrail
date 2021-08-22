@@ -46,7 +46,11 @@ The folloing variuables are used within the IAC.
 - `dd_ok_actions` - The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name.
 - `user_name` - Username for the KMS Key Administrators.
 
-As the IAc is using lots of varibles, it is more convenient to to specify their values in a variable definitions file and then specift that file on the command line.
+# NOTE: 
+Please have your aws profile configured locally on the host. IAC make use of the profile creds for resources creation.
+
+As the IAc is using lots of varibles, it is more convenient to to specify their values in a variable definitions file and then specify that file on the command line. In this case
+I have used the file name as `dev.tfvars`.
 
 `terraform apply -var-file="dev.tfvars"`
 
@@ -56,7 +60,7 @@ As the IAc is using lots of varibles, it is more convenient to to specify their 
  - Valid AWS API keys/profile(configured AWS profile locally on host)
 
 ## Usage
-# NOTE = Please have your aws profile configured locally on the host. IAC make use of the profile creds for resources creation.
+
 
 - terraform apply -var-file="dev.tfvars"
 
